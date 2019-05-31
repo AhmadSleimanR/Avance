@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="402.0" y="448.0">pe.isil.mghplatform.model.Usuario</node>
+    <node x="232.0" y="786.0">pe.isil.mghplatform.MghPlatformApplication</node>
+    <node x="0.0" y="448.0">pe.isil.mghplatform.model.Alojamiento</node>
+    <node x="0.0" y="0.0">pe.isil.mghplatform.model.Reserva</node>
+    <node x="620.0" y="0.0">pe.isil.mghplatform.model.Habitacion</node>
+    <node x="763.0" y="448.0">pe.isil.mghplatform.model.Pago</node>
+    <node x="0.0" y="786.0">pe.isil.mghplatform.model.Foto</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
