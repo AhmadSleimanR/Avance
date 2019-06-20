@@ -16,7 +16,8 @@ import javax.persistence.*;
 @Data
 @JsonIgnoreProperties({"alojamiento", "usuario", "handler"})
 public class Foto implements Serializable {
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private Integer IdFoto;
     private String urlFoto;
     private String codEntidad;

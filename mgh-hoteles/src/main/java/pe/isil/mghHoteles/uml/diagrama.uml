@@ -3,68 +3,42 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="488.0" y="850.0">pe.isil.mghHoteles.model.Alojamiento</node>
-    <node x="0.0" y="645.0">pe.isil.mghHoteles.service.PagoService</node>
-    <node x="1325.0" y="850.0">pe.isil.mghHoteles.model.Pago</node>
-    <node x="813.0" y="645.0">pe.isil.mghHoteles.service.FotoService</node>
-    <node x="992.0" y="645.0">pe.isil.mghHoteles.service.HabitacionService</node>
-    <node x="572.0" y="645.0">pe.isil.mghHoteles.service.AlojamientoService</node>
-    <node x="0.0" y="1232.0">pe.isil.mghHoteles.model.Foto</node>
-    <node x="232.0" y="1232.0">pe.isil.mghHoteles.resource.UsuarioResource</node>
-    <node x="0.0" y="850.0">pe.isil.mghHoteles.model.Habitacion</node>
-    <node x="510.5" y="448.0">pe.isil.mghHoteles.service.BasicCrud</node>
-    <node x="571.0" y="1232.0">pe.isil.mghHoteles.MghHotelesApplication</node>
-    <node x="182.0" y="645.0">pe.isil.mghHoteles.service.ReservaService</node>
-    <node x="377.0" y="645.0">pe.isil.mghHoteles.service.UsuarioService</node>
-    <node x="0.0" y="0.0">pe.isil.mghHoteles.model.Reserva</node>
-    <node x="927.0" y="850.0">pe.isil.mghHoteles.model.Usuario</node>
+    <node x="1293.0" y="404.0">pe.isil.mghHoteles.model.Pago</node>
+    <node x="555.0" y="1198.0">pe.isil.mghHoteles.service.FotoService</node>
+    <node x="957.0" y="992.0">pe.isil.mghHoteles.service.HabitacionService</node>
+    <node x="391.0" y="786.0">pe.isil.mghHoteles.resource.HabitacionResource</node>
+    <node x="768.0" y="786.0">pe.isil.mghHoteles.resource.UsuarioResource</node>
+    <node x="0.0" y="404.0">pe.isil.mghHoteles.model.Habitacion</node>
+    <node x="821.0" y="1198.0">pe.isil.mghHoteles.MghHotelesApplication</node>
+    <node x="315.0" y="992.0">pe.isil.mghHoteles.resource.FotoResource</node>
+    <node x="1276.0" y="992.0">pe.isil.mghHoteles.service.ReservaService</node>
+    <node x="0.0" y="992.0">pe.isil.mghHoteles.resource.PagoResource</node>
+    <node x="1335.0" y="1198.0">pe.isil.mghHoteles.repository.HabitacionRepository</node>
+    <node x="0.0" y="1198.0">pe.isil.mghHoteles.service.UsuarioService</node>
+    <node x="1109.0" y="786.0">pe.isil.mghHoteles.resource.ReservaResource</node>
+    <node x="225.0" y="1403.0">pe.isil.mghHoteles.repository.UsuarioRepository</node>
+    <node x="501.0" y="404.0">pe.isil.mghHoteles.model.Usuario</node>
+    <node x="0.0" y="786.0">pe.isil.mghHoteles.resource.AlojamientoResource</node>
+    <node x="0.0" y="0.0">pe.isil.mghHoteles.model.Alojamiento</node>
+    <node x="284.0" y="1198.0">pe.isil.mghHoteles.service.PagoService</node>
+    <node x="624.0" y="992.0">pe.isil.mghHoteles.service.AlojamientoService</node>
+    <node x="1078.0" y="1198.0">pe.isil.mghHoteles.repository.AlojamientoRepository</node>
+    <node x="946.0" y="404.0">pe.isil.mghHoteles.model.Foto</node>
+    <node x="450.0" y="1403.0">pe.isil.mghHoteles.repository.FotoRepository</node>
+    <node x="0.0" y="1403.0">pe.isil.mghHoteles.repository.ReservaRepository</node>
+    <node x="599.0" y="0.0">pe.isil.mghHoteles.model.Reserva</node>
+    <node x="649.0" y="1403.0">pe.isil.mghHoteles.repository.PagoRepository</node>
   </nodes>
   <notes />
-  <edges>
-    <edge source="pe.isil.mghHoteles.service.UsuarioService" target="pe.isil.mghHoteles.service.BasicCrud">
-      <point x="0.0" y="-80.0" />
-      <point x="464.5" y="625.0" />
-      <point x="563.0" y="625.0" />
-      <point x="-10.5" y="68.5" />
-    </edge>
-    <edge source="pe.isil.mghHoteles.service.PagoService" target="pe.isil.mghHoteles.service.BasicCrud">
-      <point x="0.0" y="-80.0" />
-      <point x="81.0" y="605.0" />
-      <point x="521.0" y="605.0" />
-      <point x="-52.5" y="68.5" />
-    </edge>
-    <edge source="pe.isil.mghHoteles.service.FotoService" target="pe.isil.mghHoteles.service.BasicCrud">
-      <point x="0.0" y="-80.0" />
-      <point x="892.5" y="615.0" />
-      <point x="605.0" y="615.0" />
-      <point x="31.5" y="68.5" />
-    </edge>
-    <edge source="pe.isil.mghHoteles.service.HabitacionService" target="pe.isil.mghHoteles.service.BasicCrud">
-      <point x="0.0" y="-80.0" />
-      <point x="1095.5" y="605.0" />
-      <point x="626.0" y="605.0" />
-      <point x="52.5" y="68.5" />
-    </edge>
-    <edge source="pe.isil.mghHoteles.service.AlojamientoService" target="pe.isil.mghHoteles.service.BasicCrud">
-      <point x="0.0" y="-80.0" />
-      <point x="682.5" y="625.0" />
-      <point x="584.0" y="625.0" />
-      <point x="10.5" y="68.5" />
-    </edge>
-    <edge source="pe.isil.mghHoteles.service.ReservaService" target="pe.isil.mghHoteles.service.BasicCrud">
-      <point x="0.0" y="-80.0" />
-      <point x="269.5" y="615.0" />
-      <point x="542.0" y="615.0" />
-      <point x="-31.5" y="68.5" />
-    </edge>
-  </edges>
-  <settings layout="Hierarchic Group" zoom="0.9" x="738.0" y="439.49999999999994" />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.9" x="738.0" y="299.44444444444446" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>
     <Category>Methods</Category>
     <Category>Properties</Category>
+    <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

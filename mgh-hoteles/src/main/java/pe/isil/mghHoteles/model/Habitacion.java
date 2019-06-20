@@ -5,10 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.io.Serializable;
 
 
@@ -18,7 +15,8 @@ import java.io.Serializable;
 @Data
 @JsonIgnoreProperties({"alojamiento", "reserva", "handler"})
 public class Habitacion implements Serializable {
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private Integer IdHabitacion;
     private String descripcion;
     private Integer tipo;

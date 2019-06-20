@@ -5,10 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,7 +17,8 @@ import java.util.List;
 @Data
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Reserva implements Serializable {
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private  Integer IdReserva;
     private  String comentarios;
     private  LocalDate fechaIngreso;

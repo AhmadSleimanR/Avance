@@ -3,10 +3,7 @@ package pe.isil.mghHoteles.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @NoArgsConstructor
@@ -15,7 +12,8 @@ import java.io.Serializable;
 @Data
 @JsonIgnoreProperties({"reserva", "handler"})
 public class Usuario implements Serializable {
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private Integer IdUsuario;
     private String nombres;
     private String apellidos;

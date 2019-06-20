@@ -18,7 +18,8 @@ import javax.persistence.*;
 @Data
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Alojamiento implements Serializable {
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private Integer IdAlojamiento;
     private String nombre;
     private Integer valoracion;

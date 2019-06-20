@@ -5,17 +5,12 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pe.isil.mghHoteles.model.*;
-import pe.isil.mghHoteles.service.AlojamientoService;
-import pe.isil.mghHoteles.service.ReservaService;
-
-import java.time.LocalDate;
+import pe.isil.mghHoteles.service.UsuarioService;
 
 @SpringBootApplication
 public class MghHotelesApplication implements CommandLineRunner {
-
     @Autowired
-    ReservaService reservaService;
-    AlojamientoService alojamientoService;
+    UsuarioService usuarioService;
 
     public static void main(String[] args) {
         SpringApplication.run(MghHotelesApplication.class, args);
@@ -24,7 +19,7 @@ public class MghHotelesApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Pago pago = new Pago();
+        /*Pago pago = new Pago();
         pago.setTipo("Efectivo");
         pago.setTotal(1500);
 
@@ -60,11 +55,19 @@ public class MghHotelesApplication implements CommandLineRunner {
         reserva.setFechaIngreso(LocalDate.of(19,07,15));
         reserva.setFechaSalida(LocalDate.of(19,10,30));
         reserva.setComentarios("");
-
         reservaService.create(reserva);
         System.out.println("reserva add success!");
 
         alojamientoService.create(alojamiento);
         System.out.println("alojamiento add success");
+        */
+        Usuario usuario = new Usuario();
+        usuario.setNombres("Jeremy");
+        usuario.setApellidos("Tornero");
+        usuario.setContrasena("1234");
+        usuario.setEmail("jeremy@gmail.com");
+        usuario.setFoto("");
+        usuario.setCodUsuario("USU01");
+        usuarioService.create(usuario);
     }
 }
