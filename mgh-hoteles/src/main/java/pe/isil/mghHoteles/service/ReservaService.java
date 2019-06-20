@@ -1,48 +1,23 @@
 package pe.isil.mghHoteles.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.isil.mghHoteles.model.Reserva;
+import pe.isil.mghHoteles.repository.ReservaRepository;
 
-import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Optional;
 
 @Service
-public class ReservaService implements BasicCrud<Reserva, Integer> {
+public class ReservaService {
+	@Autowired
+	private ReservaRepository ReservaRepository;
 
-    List<Reserva> reservas = new ArrayList<>();
-
-    @Override
-    public void create(Reserva reserva) { reservas.add(reserva);
-    }
-
-    @Override
-    public Reserva update(Reserva reservaUpdated) {
-        Reserva currentReserva = findById(reservaUpdated.getIdReserva());
-        int index = reservas.indexOf(currentReserva);
-        reservas.set(index, reservaUpdated);
-        return reservaUpdated;
-    }
-
-    @Override
-    public void delete(Reserva reserva) {
-        reservas.remove(reserva);
-    }
-
-    @Override
-    public List<Reserva> findAll() {
-        return reservas;
-    }
-
-    @Override
-    public Reserva findById(Integer idreserva) {
-        Reserva reserva = reservas.stream()
-                .filter(e -> idreserva.equals(e.getIdReserva()))
-                .findFirst()
-                .orElseGet(null);
-
-        return reserva;
-    }
+	public void create(Reserva Reserva){
+		ReservaRepository.save(Reserva);
+	}
+	public void delete(Reserva Reserva){ReservaRepository.delete(Reserva);}
+	public void update(Reserva Reserva){ReservaRepository.save(Reserva);}
+	public Optional<Reserva> findById(Integer IdReserva){return ReservaRepository.findById(IdReserva);}
+	public List<Reserva> findAll(){return ReservaRepository.findAll();}
 }
-
-

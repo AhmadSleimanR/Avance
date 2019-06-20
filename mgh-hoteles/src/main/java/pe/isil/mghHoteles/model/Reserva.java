@@ -1,17 +1,24 @@
 package pe.isil.mghHoteles.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 @Data
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Reserva implements Serializable {
 
     private  Integer IdReserva;
@@ -19,21 +26,11 @@ public class Reserva implements Serializable {
     private  LocalDate fechaIngreso;
     private  LocalDate fechaSalida;
     private  Integer cantidad_de_personas;
-    private  List<Usuario> usuarios;
-    private  List<Habitacion> habitaciones;
-    private  List<Pago> pagos;
 
-
-    public void addUsuarios(Usuario ... usuariosArgs){
-        usuarios = Arrays.asList(usuariosArgs);
-    }
-
-    public void addHabitaciones(Habitacion ... habitacionesArgs) {
-            habitaciones = Arrays.asList(habitacionesArgs);
-        }
-
-    public void addPagos(Pago ... pagosArgs) {
-        pagos = Arrays.asList(pagosArgs);
-    }
-
+    @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Usuario> usuarios = new ArrayList<>();
+    @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Pago> pagos = new ArrayList<>();
+    @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Habitacion> habitaciones = new ArrayList<>();
 }

@@ -1,47 +1,23 @@
 package pe.isil.mghHoteles.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.isil.mghHoteles.model.Habitacion;
+import pe.isil.mghHoteles.repository.HabitacionRepository;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
-public class HabitacionService implements BasicCrud<Habitacion, Integer> {
+public class HabitacionService {
+	@Autowired
+	private HabitacionRepository habitacionRepository;
 
-    List<Habitacion> habitaciones = new ArrayList<>();
-
-    @Override
-    public void create(Habitacion habitacion) {
-        habitaciones.add(habitacion);
-    }
-
-    @Override
-    public Habitacion update(Habitacion habitacionUpdated) {
-        Habitacion currentHabitacion = findById(habitacionUpdated.getIdHabitacion());
-        int index = habitaciones.indexOf(currentHabitacion);
-        habitaciones.set(index, habitacionUpdated);
-        return habitacionUpdated;
-    }
-
-    @Override
-    public void delete(Habitacion habitacion) {
-        habitaciones.remove(habitacion);
-    }
-
-    @Override
-    public List<Habitacion> findAll() {
-        return habitaciones;
-    }
-
-    @Override
-    public Habitacion findById(Integer idhabitacion) {
-        Habitacion habitacion = habitaciones.stream()
-                .filter(e -> idhabitacion.equals(e.getIdHabitacion()))
-                .findFirst()
-                .orElseGet(null);
-
-        return habitacion;
-    }
-
+	public void create(Habitacion habitacion){
+		habitacionRepository.save(habitacion);
+	}
+	public void delete(Habitacion habitacion){habitacionRepository.delete(habitacion);}
+	public void update(Habitacion habitacion){habitacionRepository.save(habitacion);}
+	public Optional<Habitacion> findById(Integer IdHabitacion){return habitacionRepository.findById(IdHabitacion);}
+	public List<Habitacion> findAll(){return habitacionRepository.findAll();}
 }
