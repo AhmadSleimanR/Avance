@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5cb9e30-8f3c-4e4e-9e88-270cfc8dd4d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/AlojamientoResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/FotoResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/HabitacionResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/PagoResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/ReservaResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Habitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Habitacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Pago.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Pago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/UsuarioResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/UsuarioResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/BasicCrud.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/UsuarioResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="391">
+              <caret line="47" column="60" lean-forward="true" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,10 +37,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/HabitacionResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="714">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,10 +49,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/PagoResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="-255">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,10 +61,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/ReservaResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="680">
+              <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,10 +73,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Foto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="340">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,10 +85,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Habitacion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,22 +97,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Pago.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/MghHotelesApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="-170">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +121,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/PagoRepository.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="170">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Usuario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,14 +160,14 @@
       <find>aloja</find>
       <find>Alojamiento</find>
       <find>alojamiento</find>
-      <find>Usuario</find>
-      <find>usuario</find>
       <find>Pago</find>
       <find>pago</find>
       <find>foto</find>
-      <find>Foto</find>
       <find>Habitacion</find>
       <find>habitacion</find>
+      <find>Foto</find>
+      <find>Usuario</find>
+      <find>usuario</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -220,6 +213,11 @@
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/FotoResource.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/AlojamientoResource.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/HabitacionResource.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/PagoResource.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/ReservaResource.java" />
       </list>
     </option>
   </component>
@@ -323,16 +321,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mghHoteles" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isil-avance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Avance" type="462c0819:PsiDirectoryNode" />
-              <item name="mgh-hoteles" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mghHoteles" type="462c0819:PsiDirectoryNode" />
               <item name="uml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -402,6 +390,7 @@
       <recent name="E:\ISILTECH\AvanceNuevo\Avance\mgh-hoteles\src\main\docker" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pe.isil.mghHoteles.resource" />
       <recent name="pe.isil.mghHoteles.service" />
       <recent name="pe.isil.mghplatform.model" />
     </key>
@@ -465,12 +454,12 @@
       <workItem from="1558661865029" duration="2834000" />
       <workItem from="1559269449062" duration="323000" />
       <workItem from="1560459328542" duration="31000" />
-      <workItem from="1560980847840" duration="13543000" />
+      <workItem from="1560980847840" duration="13968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23070000" />
+    <option name="totallyTimeSpent" value="23495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
@@ -812,16 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/FotoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/UsuarioRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -836,26 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Habitacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Foto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -879,60 +838,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Pago.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/PagoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/MghHotelesApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/UsuarioResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -979,20 +888,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java">
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java">
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="323">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/FotoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/FotoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/AlojamientoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/HabitacionResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Habitacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Pago.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/PagoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/UsuarioResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="47" column="60" lean-forward="true" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/MghHotelesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/ReservaResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Foto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
