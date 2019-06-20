@@ -2,7 +2,6 @@ package pe.isil.mghHoteles.service;
 
 import org.springframework.stereotype.Service;
 import pe.isil.mghHoteles.model.Foto;
-import pe.isil.mghHoteles.model.Foto;
 
 import java.util.ArrayList;
 import java.util.List;
