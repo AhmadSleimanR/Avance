@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5cb9e30-8f3c-4e4e-9e88-270cfc8dd4d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/uml/diagrama.uml" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/uml/diagrama.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/BasicCrud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/uml/diagrama2.uml" beforeDir="false" afterPath="$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/uml/diagrama2.uml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,359 +28,88 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/MghHotelesApplication.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/FotoRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-595">
-              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+            <state relative-caret-position="85">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Alojamiento.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/MghPlatformApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/BasicCrud.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/uml/diagrama.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="382.125" y="784.0">pe.isil.mghHoteles.model.Pago</node>
-                <node x="0.0" y="828.5">pe.isil.mghHoteles.service.FotoService</node>
-                <node x="1361.5548333333334" y="1602.5">pe.isil.mghHoteles.service.HabitacionService</node>
-                <node x="1406.3048333333334" y="1901.0">pe.isil.mghHoteles.resource.HabitacionResource</node>
-                <node x="1215.6224166666666" y="740.0">pe.isil.mghHoteles.model.Habitacion</node>
-                <node x="1139.3048333333334" y="2323.0">pe.isil.mghHoteles.resource.UsuarioResource</node>
-                <node x="896.8048333333334" y="2356.5">pe.isil.mghHoteles.MghHotelesApplication</node>
-                <node x="51.625" y="1215.0">pe.isil.mghHoteles.resource.FotoResource</node>
-                <node x="597.875" y="1901.5">pe.isil.mghHoteles.service.ReservaService</node>
-                <node x="307.875" y="1901.0">pe.isil.mghHoteles.resource.PagoResource</node>
-                <node x="1338.8048333333334" y="1282.0">pe.isil.mghHoteles.repository.HabitacionRepository</node>
-                <node x="1029.1381666666668" y="2112.5">pe.isil.mghHoteles.service.UsuarioService</node>
-                <node x="635.125" y="2112.0">pe.isil.mghHoteles.resource.ReservaResource</node>
-                <node x="906.892583333333" y="1514.0">pe.isil.mghHoteles.model.Usuario</node>
-                <node x="1004.9474166666665" y="1968.0">pe.isil.mghHoteles.repository.UsuarioRepository</node>
-                <node x="1722.3048333333334" y="1602.0">pe.isil.mghHoteles.resource.AlojamientoResource</node>
-                <node x="1456.0167499999998" y="331.0">pe.isil.mghHoteles.model.Alojamiento</node>
-                <node x="257.375" y="1602.5">pe.isil.mghHoteles.service.PagoService</node>
-                <node x="1752.3048333333334" y="895.0">pe.isil.mghHoteles.repository.AlojamientoRepository</node>
-                <node x="1656.5548333333334" y="1215.5">pe.isil.mghHoteles.service.AlojamientoService</node>
-                <node x="561.2916666666665" y="0.0">pe.isil.mghHoteles.model.Foto</node>
-                <node x="77.90008333333321" y="497.0">pe.isil.mghHoteles.repository.FotoRepository</node>
-                <node x="576.125" y="1669.0">pe.isil.mghHoteles.repository.ReservaRepository</node>
-                <node x="577.8092499999998" y="1127.0">pe.isil.mghHoteles.model.Reserva</node>
-                <node x="336.625" y="1282.0">pe.isil.mghHoteles.repository.PagoRepository</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="pe.isil.mghHoteles.service.FotoService" target="pe.isil.mghHoteles.model.Foto">
-                  <point x="-55.75" y="-80.0" />
-                  <point x="55.75" y="715.0" />
-                  <point x="67.40008333333321" y="715.0" />
-                  <point x="67.40008333333321" y="291.0" />
-                  <point x="586.4583333333333" y="291.0" />
-                  <point x="-125.83333333333326" y="135.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.HabitacionService" target="pe.isil.mghHoteles.model.Habitacion">
-                  <point x="68.5" y="-80.0" />
-                  <point x="1567.0548333333334" y="1489.0" />
-                  <point x="1555.3048333333334" y="1489.0" />
-                  <point x="1555.3048333333334" y="1107.0" />
-                  <point x="1534.8224166666664" y="1107.0" />
-                  <point x="91.19999999999982" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Usuario" target="pe.isil.mghHoteles.model.Reserva">
-                  <point x="-133.33333333333337" y="-168.5" />
-                  <point x="973.5592499999996" y="1489.0" />
-                  <point x="980.3092499999998" y="1489.0" />
-                  <point x="115.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.HabitacionResource" target="pe.isil.mghHoteles.service.HabitacionService">
-                  <point x="-83.0" y="-80.5" />
-                  <point x="1489.3048333333334" y="1876.0" />
-                  <point x="1498.5548333333334" y="1876.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.PagoResource" target="pe.isil.mghHoteles.model.Pago">
-                  <point x="67.5" y="-80.5" />
-                  <point x="510.375" y="1876.0" />
-                  <point x="504.625" y="1876.0" />
-                  <point x="0.0" y="124.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.ReservaService" target="pe.isil.mghHoteles.repository.ReservaRepository">
-                  <point x="-60.0" y="-80.0" />
-                  <point x="657.875" y="1876.0" />
-                  <point x="667.125" y="1876.0" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.repository.UsuarioRepository" target="pe.isil.mghHoteles.model.Usuario">
-                  <point x="0.0" y="-13.5" />
-                  <point x="1095.9474166666664" y="1876.0" />
-                  <point x="1106.892583333333" y="1876.0" />
-                  <point x="0.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.ReservaResource" target="pe.isil.mghHoteles.service.ReservaService">
-                  <point x="-74.0" y="-80.5" />
-                  <point x="709.125" y="2087.0" />
-                  <point x="717.875" y="2087.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.repository.HabitacionRepository" target="pe.isil.mghHoteles.model.Habitacion">
-                  <point x="0.0" y="-13.5" />
-                  <point x="1441.8048333333334" y="1107.0" />
-                  <point x="1443.6224166666666" y="1107.0" />
-                  <point x="0.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.AlojamientoResource" target="pe.isil.mghHoteles.model.Alojamiento">
-                  <point x="86.5" y="-80.5" />
-                  <point x="1981.8048333333334" y="1489.0" />
-                  <point x="1976.8048333333334" y="1489.0" />
-                  <point x="1976.8048333333334" y="715.0" />
-                  <point x="1954.6167499999997" y="715.0" />
-                  <point x="221.5999999999999" y="179.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.repository.FotoRepository" target="pe.isil.mghHoteles.model.Foto">
-                  <point x="0.0" y="-13.5" />
-                  <point x="155.9000833333332" y="301.0" />
-                  <point x="636.7916666666665" y="301.0" />
-                  <point x="-75.5" y="135.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Foto" target="pe.isil.mghHoteles.model.Usuario">
-                  <point x="25.166666666666742" y="135.5" />
-                  <point x="737.4583333333333" y="311.0" />
-                  <point x="1205.1224166666666" y="311.0" />
-                  <point x="1205.1224166666666" y="1489.0" />
-                  <point x="1240.2259166666663" y="1489.0" />
-                  <point x="133.33333333333326" y="-168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.UsuarioService" target="pe.isil.mghHoteles.repository.UsuarioRepository">
-                  <point x="-59.75" y="-80.0" />
-                  <point x="1088.8881666666668" y="2087.0" />
-                  <point x="1095.9474166666664" y="2087.0" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.UsuarioService" target="pe.isil.mghHoteles.model.Usuario">
-                  <point x="59.75" y="-80.0" />
-                  <point x="1208.3881666666668" y="2087.0" />
-                  <point x="1201.2750833333332" y="2087.0" />
-                  <point x="1201.2750833333332" y="1876.0" />
-                  <point x="1186.892583333333" y="1876.0" />
-                  <point x="80.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.PagoService" target="pe.isil.mghHoteles.repository.PagoRepository">
-                  <point x="56.5" y="-80.0" />
-                  <point x="426.875" y="1489.0" />
-                  <point x="414.625" y="1489.0" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Habitacion" target="pe.isil.mghHoteles.model.Reserva">
-                  <point x="-91.20000000000005" y="168.5" />
-                  <point x="1352.4224166666665" y="1107.0" />
-                  <point x="1080.9342499999998" y="1107.0" />
-                  <point x="215.625" y="-168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Reserva" target="pe.isil.mghHoteles.model.Habitacion">
-                  <point x="71.875" y="-168.5" />
-                  <point x="937.1842499999998" y="1097.0" />
-                  <point x="1261.2224166666665" y="1097.0" />
-                  <point x="-182.4000000000001" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.AlojamientoService" target="pe.isil.mghHoteles.model.Alojamiento">
-                  <point x="-72.0" y="-80.0" />
-                  <point x="1728.5548333333334" y="1107.0" />
-                  <point x="1741.8048333333334" y="1107.0" />
-                  <point x="1741.8048333333334" y="715.0" />
-                  <point x="1733.0167499999998" y="715.0" />
-                  <point x="0.0" y="179.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.repository.PagoRepository" target="pe.isil.mghHoteles.model.Pago">
-                  <point x="0.0" y="-13.5" />
-                  <point x="414.625" y="1107.0" />
-                  <point x="455.625" y="1107.0" />
-                  <point x="-49.0" y="124.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.MghHotelesApplication" target="pe.isil.mghHoteles.service.UsuarioService">
-                  <point x="70.66666666666686" y="-47.0" />
-                  <point x="1073.4715" y="2298.0" />
-                  <point x="1088.8881666666668" y="2298.0" />
-                  <point x="-59.75" y="80.0" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Reserva" target="pe.isil.mghHoteles.model.Usuario">
-                  <point x="230.0" y="168.5" />
-                  <point x="1095.3092499999998" y="1489.0" />
-                  <point x="1106.892583333333" y="1489.0" />
-                  <point x="0.0" y="-168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.repository.AlojamientoRepository" target="pe.isil.mghHoteles.model.Alojamiento">
-                  <point x="0.0" y="-13.5" />
-                  <point x="1859.3048333333334" y="715.0" />
-                  <point x="1843.8167499999997" y="715.0" />
-                  <point x="110.79999999999995" y="179.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Foto" target="pe.isil.mghHoteles.model.Alojamiento">
-                  <point x="125.83333333333326" y="135.5" />
-                  <point x="838.1249999999998" y="291.0" />
-                  <point x="1871.5167499999998" y="291.0" />
-                  <point x="138.5" y="-179.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Habitacion" target="pe.isil.mghHoteles.model.Alojamiento">
-                  <point x="-114.0" y="-168.5" />
-                  <point x="1329.6224166666666" y="715.0" />
-                  <point x="1511.4167499999999" y="715.0" />
-                  <point x="-221.5999999999999" y="179.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.AlojamientoResource" target="pe.isil.mghHoteles.service.AlojamientoService">
-                  <point x="-86.5" y="-80.5" />
-                  <point x="1808.8048333333334" y="1489.0" />
-                  <point x="1800.5548333333334" y="1489.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.FotoService" target="pe.isil.mghHoteles.repository.FotoRepository">
-                  <point x="55.75" y="-80.0" />
-                  <point x="167.25" y="715.0" />
-                  <point x="155.9000833333332" y="715.0" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.ReservaService" target="pe.isil.mghHoteles.model.Reserva">
-                  <point x="60.0" y="-80.0" />
-                  <point x="777.875" y="1876.0" />
-                  <point x="768.625" y="1876.0" />
-                  <point x="768.625" y="1489.0" />
-                  <point x="750.3092499999998" y="1489.0" />
-                  <point x="-115.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Pago" target="pe.isil.mghHoteles.model.Reserva">
-                  <point x="98.0" y="124.5" />
-                  <point x="602.625" y="1097.0" />
-                  <point x="793.4342499999998" y="1097.0" />
-                  <point x="-71.875" y="-168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.UsuarioResource" target="pe.isil.mghHoteles.service.UsuarioService">
-                  <point x="-74.0" y="-80.5" />
-                  <point x="1213.3048333333334" y="2298.0" />
-                  <point x="1208.3881666666668" y="2298.0" />
-                  <point x="59.75" y="80.0" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.PagoResource" target="pe.isil.mghHoteles.service.PagoService">
-                  <point x="-67.5" y="-80.5" />
-                  <point x="375.375" y="1876.0" />
-                  <point x="370.375" y="1876.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.UsuarioResource" target="pe.isil.mghHoteles.model.Usuario">
-                  <point x="74.0" y="-80.5" />
-                  <point x="1361.3048333333334" y="2298.0" />
-                  <point x="1288.8806666666667" y="2298.0" />
-                  <point x="1288.8806666666667" y="1876.0" />
-                  <point x="1266.892583333333" y="1876.0" />
-                  <point x="160.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.PagoService" target="pe.isil.mghHoteles.model.Pago">
-                  <point x="-56.5" y="-80.0" />
-                  <point x="313.875" y="1489.0" />
-                  <point x="326.125" y="1489.0" />
-                  <point x="326.125" y="1107.0" />
-                  <point x="406.625" y="1107.0" />
-                  <point x="-98.0" y="124.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Reserva" target="pe.isil.mghHoteles.model.Pago">
-                  <point x="-215.625" y="-168.5" />
-                  <point x="649.6842499999998" y="1107.0" />
-                  <point x="553.625" y="1107.0" />
-                  <point x="49.0" y="124.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.repository.ReservaRepository" target="pe.isil.mghHoteles.model.Reserva">
-                  <point x="0.0" y="-13.5" />
-                  <point x="667.125" y="1489.0" />
-                  <point x="635.3092499999998" y="1489.0" />
-                  <point x="-230.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.FotoResource" target="pe.isil.mghHoteles.service.FotoService">
-                  <point x="-66.0" y="-80.5" />
-                  <point x="117.625" y="1107.0" />
-                  <point x="111.5" y="1107.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.ReservaResource" target="pe.isil.mghHoteles.model.Reserva">
-                  <point x="74.0" y="-80.5" />
-                  <point x="857.125" y="2087.0" />
-                  <point x="848.375" y="2087.0" />
-                  <point x="848.375" y="1489.0" />
-                  <point x="865.3092499999998" y="1489.0" />
-                  <point x="0.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.HabitacionService" target="pe.isil.mghHoteles.repository.HabitacionRepository">
-                  <point x="-68.5" y="-80.0" />
-                  <point x="1430.0548333333334" y="1489.0" />
-                  <point x="1441.8048333333334" y="1489.0" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.service.AlojamientoService" target="pe.isil.mghHoteles.repository.AlojamientoRepository">
-                  <point x="72.0" y="-80.0" />
-                  <point x="1872.5548333333334" y="1107.0" />
-                  <point x="1859.3048333333334" y="1107.0" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.MghHotelesApplication" target="pe.isil.mghHoteles.model.Usuario">
-                  <point x="1.1368683772161603E-13" y="-47.0" />
-                  <point x="1002.8048333333334" y="2298.0" />
-                  <point x="959.375" y="2298.0" />
-                  <point x="959.375" y="1876.0" />
-                  <point x="1026.892583333333" y="1876.0" />
-                  <point x="-80.0" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.HabitacionResource" target="pe.isil.mghHoteles.model.Habitacion">
-                  <point x="83.0" y="-80.5" />
-                  <point x="1655.3048333333334" y="1876.0" />
-                  <point x="1646.0548333333334" y="1876.0" />
-                  <point x="1646.0548333333334" y="1107.0" />
-                  <point x="1626.0224166666665" y="1107.0" />
-                  <point x="182.39999999999986" y="168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Alojamiento" target="pe.isil.mghHoteles.model.Foto">
-                  <point x="-138.5" y="-179.5" />
-                  <point x="1594.5167499999998" y="301.0" />
-                  <point x="787.7916666666665" y="301.0" />
-                  <point x="75.5" y="135.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.model.Alojamiento" target="pe.isil.mghHoteles.model.Habitacion">
-                  <point x="-110.79999999999995" y="179.5" />
-                  <point x="1622.2167499999998" y="715.0" />
-                  <point x="1557.6224166666666" y="715.0" />
-                  <point x="114.0" y="-168.5" />
-                </edge>
-                <edge source="pe.isil.mghHoteles.resource.FotoResource" target="pe.isil.mghHoteles.model.Foto">
-                  <point x="66.0" y="-80.5" />
-                  <point x="249.625" y="1107.0" />
-                  <point x="244.625" y="1107.0" />
-                  <point x="244.625" y="311.0" />
-                  <point x="687.1249999999998" y="311.0" />
-                  <point x="-25.166666666666742" y="135.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.9" x="738.0" y="299.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -381,10 +118,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Alojamiento.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="425">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -393,70 +130,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Habitacion.java">
+        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Foto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Pago.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Usuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/FotoResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -519,13 +196,7 @@
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/PagoRepository.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/ReservaRepository.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/UsuarioRepository.java" />
-        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/UsuarioResource.java" />
-        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java" />
-        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java" />
-        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java" />
-        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java" />
-        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/FotoResource.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/AlojamientoResource.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/HabitacionResource.java" />
@@ -539,6 +210,14 @@
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Foto.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Alojamiento.java" />
         <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/MghHotelesApplication.java" />
+        <option value="$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Usuario.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/BasicCrud.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java" />
+        <option value="$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java" />
       </list>
     </option>
   </component>
@@ -561,7 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -701,13 +380,63 @@
               <item name="isil-avance" type="b2602c69:ProjectViewProjectNode" />
               <item name="Avance" type="462c0819:PsiDirectoryNode" />
               <item name="mgh-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isil-avance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Avance" type="462c0819:PsiDirectoryNode" />
+              <item name="mgh-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isil-avance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Avance" type="462c0819:PsiDirectoryNode" />
+              <item name="mgh-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isil-avance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Avance" type="462c0819:PsiDirectoryNode" />
+              <item name="mgh-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mghplatform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isil-avance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Avance" type="462c0819:PsiDirectoryNode" />
+              <item name="mgh-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mghplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isil-avance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Avance" type="462c0819:PsiDirectoryNode" />
+              <item name="mgh-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mghplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isil-avance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Avance" type="462c0819:PsiDirectoryNode" />
+              <item name="mgh-platform" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -719,7 +448,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mgh-hoteles/src/main/docker" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -734,16 +463,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\ISILTECH\AvanceNuevo\Avance\mgh-hoteles\src\main\docker" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pe.isil.mghHoteles.resource" />
-      <recent name="pe.isil.mghHoteles.service" />
-      <recent name="pe.isil.mghplatform.model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ISILTECH\AvanceNuevo\Avance\mgh-Hoteles\src\main\java\pe\isil\mghHoteles" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pe.isil.mghHoteles.service" />
+      <recent name="pe.isil.mghHoteles.resource" />
+      <recent name="pe.isil.mghplatform.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ISILTECH\AvanceNuevo\Avance\mgh-platform\src\main\java\pe\isil\mghplatform\model" />
+      <recent name="E:\ISILTECH\AvanceNuevo\Avance\mgh-hoteles\src\main\docker" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -802,18 +532,20 @@
       <workItem from="1558661865029" duration="2834000" />
       <workItem from="1559269449062" duration="323000" />
       <workItem from="1560459328542" duration="31000" />
-      <workItem from="1560980847840" duration="14786000" />
+      <workItem from="1560980847840" duration="16416000" />
+      <workItem from="1561655393665" duration="2000" />
+      <workItem from="1561669999416" duration="1438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24313000" />
+    <option name="totallyTimeSpent" value="27383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -821,7 +553,6 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3290461" />
@@ -836,6 +567,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -878,127 +610,6 @@
     <entry file="file://$PROJECT_DIR$/mgh-Hoteles/src/main/java/pe/isil/mghHoteles/UML/asdasd.uml" />
     <entry file="file://$PROJECT_DIR$/mgh-Hoteles/src/main/java/pe/isil/mghHoteles/Diagrama.uml" />
     <entry file="file://$PROJECT_DIR$/mgh-Hoteles/src/main/java/pe/isil/mghHoteles/Diagrama.puml" />
-    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/uml/diagrama2.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="703.6713541666668" y="354.0">pe.isil.mghplatform.model.Usuario</node>
-            <node x="312.9317708333334" y="1201.0">pe.isil.mghplatform.MghPlatformApplication</node>
-            <node x="273.0645833333334" y="0.0">pe.isil.mghplatform.model.Alojamiento</node>
-            <node x="164.06458333333336" y="718.0">pe.isil.mghplatform.model.Reserva</node>
-            <node x="263.9213541666668" y="343.0">pe.isil.mghplatform.model.Habitacion</node>
-            <node x="10.5" y="387.0">pe.isil.mghplatform.model.Pago</node>
-            <node x="1101.1713541666668" y="0.0">pe.isil.mghplatform.model.Foto</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="pe.isil.mghplatform.MghPlatformApplication" target="pe.isil.mghplatform.model.Pago">
-              <point x="-75.99999999999994" y="-69.0" />
-              <point x="388.9317708333335" y="1161.0" />
-              <point x="65.5" y="1161.0" />
-              <point x="65.5" y="698.0" />
-              <point x="84.75" y="698.0" />
-              <point x="-24.75" y="113.5" />
-            </edge>
-            <edge source="pe.isil.mghplatform.model.Reserva" target="pe.isil.mghplatform.model.Pago">
-              <point x="-143.74999999999994" y="-201.5" />
-              <point x="307.8145833333334" y="678.0" />
-              <point x="183.75" y="678.0" />
-              <point x="74.25" y="113.5" />
-            </edge>
-            <edge source="pe.isil.mghplatform.MghPlatformApplication" target="pe.isil.mghplatform.model.Usuario">
-              <point x="106.39999999999998" y="-69.0" />
-              <point x="571.3317708333334" y="1171.0" />
-              <point x="933.5645833333334" y="1171.0" />
-              <point x="933.5645833333334" y="698.0" />
-              <point x="980.1713541666668" y="698.0" />
-              <point x="118.5" y="146.5" />
-            </edge>
-            <edge source="pe.isil.mghplatform.model.Habitacion" target="pe.isil.mghplatform.model.Alojamiento">
-              <point x="100.0" y="-157.5" />
-              <point x="563.9213541666668" y="318.0" />
-              <point x="496.1895833333334" y="318.0" />
-              <point x="44.625" y="146.5" />
-            </edge>
-            <edge source="pe.isil.mghplatform.model.Reserva" target="pe.isil.mghplatform.model.Habitacion">
-              <point x="-47.91666666666663" y="-201.5" />
-              <point x="403.64791666666673" y="698.0" />
-              <point x="413.9213541666668" y="698.0" />
-              <point x="-50.0" y="157.5" />
-            </edge>
-            <edge source="pe.isil.mghplatform.MghPlatformApplication" target="pe.isil.mghplatform.model.Habitacion">
-              <point x="-45.599999999999966" y="-69.0" />
-              <point x="419.33177083333345" y="1151.0" />
-              <point x="137.23125000000005" y="1151.0" />
-              <point x="137.23125000000005" y="698.0" />
-              <point x="313.9213541666668" y="698.0" />
-              <point x="-150.0" y="157.5" />
-            </edge>
-            <edge source="pe.isil.mghplatform.MghPlatformApplication" target="pe.isil.mghplatform.model.Reserva">
-              <point x="-15.200000000000045" y="-69.0" />
-              <point x="449.73177083333337" y="1141.0" />
-              <point x="307.81458333333336" y="1141.0" />
-              <point x="-143.75" y="201.5" />
-            </edge>
-            <edge source="pe.isil.mghplatform.model.Reserva" target="pe.isil.mghplatform.model.Usuario">
-              <point x="143.75" y="-201.5" />
-              <point x="595.3145833333333" y="688.0" />
-              <point x="743.1713541666668" y="688.0" />
-              <point x="-118.5" y="146.5" />
-            </edge>
-            <edge source="pe.isil.mghplatform.MghPlatformApplication" target="pe.isil.mghplatform.model.Alojamiento">
-              <point x="-136.7999999999999" y="-69.0" />
-              <point x="328.1317708333335" y="1181.0" />
-              <point x="0.0" y="1181.0" />
-              <point x="0.0" y="318.0" />
-              <point x="317.6895833333334" y="318.0" />
-              <point x="-133.875" y="146.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="102.0" y="744.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Foto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Alojamiento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/MghPlatformApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="73" column="70" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1016,34 +627,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/docker/activemq.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/BasicCrud.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/docker/activemq.yml" />
     <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/test/java/pe/isil/mghHoteles/MghHotelesApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/HabitacionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,56 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/FotoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/AlojamientoResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -1141,40 +679,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/HabitacionResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/PagoResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/UsuarioResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/ReservaResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1222,104 +730,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/FotoResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Pago.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Habitacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Foto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Alojamiento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/MghHotelesApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1643,7 +1059,7 @@
               <point x="-25.166666666666742" y="135.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9" x="738.0" y="299.0" />
+          <settings layout="Hierarchic Group" zoom="0.9" x="189.0" y="246.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1654,6 +1070,271 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/MghHotelesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Foto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Alojamiento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Reserva.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Pago.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Habitacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/model/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/HabitacionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/HabitacionResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Habitacion.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Foto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Reserva.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Pago.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/uml/diagrama2.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="406.0" y="448.0">pe.isil.mghplatform.model.Usuario</node>
+            <node x="236.0" y="786.0">pe.isil.mghplatform.MghPlatformApplication</node>
+            <node x="0.0" y="448.0">pe.isil.mghplatform.model.Alojamiento</node>
+            <node x="0.0" y="0.0">pe.isil.mghplatform.model.Reserva</node>
+            <node x="620.0" y="0.0">pe.isil.mghplatform.model.Habitacion</node>
+            <node x="771.0" y="448.0">pe.isil.mghplatform.model.Pago</node>
+            <node x="0.0" y="786.0">pe.isil.mghplatform.model.Foto</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-494.0" y="-47.0" />
+          <SelectedNodes>
+            <node>pe.isil.mghplatform.model.Usuario</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/UsuarioResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/resource/ReservaResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/repository/FotoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/model/Alojamiento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-platform/src/main/java/pe/isil/mghplatform/MghPlatformApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/AlojamientoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/BasicCrud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/FotoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/HabitacionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/PagoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/ReservaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgh-hoteles/src/main/java/pe/isil/mghHoteles/service/UsuarioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

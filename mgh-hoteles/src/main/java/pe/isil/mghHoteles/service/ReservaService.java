@@ -9,15 +9,19 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ReservaService {
+public class ReservaService implements BasicCrud<Reserva, Integer>{
 	@Autowired
 	private ReservaRepository ReservaRepository;
-
+	@Override
 	public void create(Reserva Reserva){
 		ReservaRepository.save(Reserva);
 	}
+	@Override
 	public void delete(Reserva Reserva){ReservaRepository.delete(Reserva);}
-	public void update(Reserva Reserva){ReservaRepository.save(Reserva);}
+	@Override
+	public Reserva update(Reserva Reserva){return ReservaRepository.save(Reserva);}
+	@Override
 	public Optional<Reserva> findById(Integer IdReserva){return ReservaRepository.findById(IdReserva);}
+	@Override
 	public List<Reserva> findAll(){return ReservaRepository.findAll();}
 }

@@ -9,15 +9,19 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class AlojamientoService {
+public class AlojamientoService implements BasicCrud<Alojamiento, Integer>{
 	@Autowired
 	private AlojamientoRepository alojamientoRepository;
-
+	@Override
 	public void create(Alojamiento alojamiento){
 		alojamientoRepository.save(alojamiento);
 	}
+	@Override
 	public void delete(Alojamiento alojamiento){alojamientoRepository.delete(alojamiento);}
-	public void update(Alojamiento alojamiento){alojamientoRepository.save(alojamiento);}
+	@Override
+	public Alojamiento update(Alojamiento alojamiento){return alojamientoRepository.save(alojamiento);}
+	@Override
 	public Optional<Alojamiento> findById(Integer IdAlojamiento){return alojamientoRepository.findById(IdAlojamiento);}
+	@Override
 	public List<Alojamiento> findAll(){return alojamientoRepository.findAll();}
 }
