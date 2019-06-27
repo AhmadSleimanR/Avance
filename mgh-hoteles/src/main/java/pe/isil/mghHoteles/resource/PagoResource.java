@@ -26,9 +26,9 @@ public class PagoResource {
         return new ResponseEntity<>(pagos, HttpStatus.OK);
     }
 
-    @GetMapping("/pagos/{IdPago}")
-    public ResponseEntity getPagoById(@PathVariable Integer IdPago){
-        Optional<Pago> pago = pagoService.findById(IdPago);
+    @GetMapping("/pagos/{idPago}")
+    public ResponseEntity getPagoById(@PathVariable Integer idPago){
+        Optional<Pago> pago = pagoService.findById(idPago);
         if(!pago.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
@@ -41,9 +41,9 @@ public class PagoResource {
         return new ResponseEntity<>(pago, HttpStatus.CREATED);
     }
 
-    @PutMapping("/pagos/{IdPago}")
-    public ResponseEntity updatePago(@PathVariable Integer IdPago, @RequestBody Pago pago){
-        Optional<Pago> currentAuthor = pagoService.findById(IdPago);
+    @PutMapping("/pagos/{idPago}")
+    public ResponseEntity updatePago(@PathVariable Integer idPago, @RequestBody Pago pago){
+        Optional<Pago> currentAuthor = pagoService.findById(idPago);
         if(!currentAuthor.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
@@ -52,9 +52,9 @@ public class PagoResource {
         return new ResponseEntity<>(pago, HttpStatus.OK);
     }
 
-    @DeleteMapping("/pagos/{IdPago}")
-    public ResponseEntity deletePago(@PathVariable Integer IdPago){
-        Optional<Pago> currentPago = pagoService.findById(IdPago);
+    @DeleteMapping("/pagos/{idPago}")
+    public ResponseEntity deletePago(@PathVariable Integer idPago){
+        Optional<Pago> currentPago = pagoService.findById(idPago);
         if(!currentPago.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }

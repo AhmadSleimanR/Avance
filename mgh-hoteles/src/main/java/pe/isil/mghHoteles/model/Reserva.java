@@ -19,14 +19,14 @@ import java.util.List;
 public class Reserva implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private  Integer IdReserva;
+    private  Integer idReserva;
     private  String comentarios;
     private  LocalDate fechaIngreso;
     private  LocalDate fechaSalida;
-    private  Integer cantidad_de_personas;
+    private  Integer cantidadDePersonas;
 
-    @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<Usuario> usuarios = new ArrayList<>();
+    @OneToOne(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Usuario usuario;
     @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Pago> pagos = new ArrayList<>();
     @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)

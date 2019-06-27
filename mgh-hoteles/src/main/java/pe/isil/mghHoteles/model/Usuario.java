@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Integer IdUsuario;
+    private Integer idUsuario;
     private String nombres;
     private String apellidos;
     private String contrasena;
@@ -22,7 +22,7 @@ public class Usuario implements Serializable {
     private String email;
     private String foto;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "IdReserva")
     private Reserva reserva;
 }

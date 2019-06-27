@@ -26,9 +26,9 @@ public class HabitacionResource {
         return new ResponseEntity<>(habitacions, HttpStatus.OK);
     }
 
-    @GetMapping("/habitacions/{IdHabitacion}")
-    public ResponseEntity getHabitacionById(@PathVariable Integer IdHabitacion){
-        Optional<Habitacion> habitacion = habitacionService.findById(IdHabitacion);
+    @GetMapping("/habitacions/{idHabitacion}")
+    public ResponseEntity getHabitacionById(@PathVariable Integer idHabitacion){
+        Optional<Habitacion> habitacion = habitacionService.findById(idHabitacion);
         if(!habitacion.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
@@ -41,20 +41,20 @@ public class HabitacionResource {
         return new ResponseEntity<>(habitacion, HttpStatus.CREATED);
     }
 
-    @PutMapping("/habitacions/{IdHabitacion}")
-    public ResponseEntity updateHabitacion(@PathVariable Integer IdHabitacion, @RequestBody Habitacion habitacion){
-        Optional<Habitacion> currentAuthor = habitacionService.findById(IdHabitacion);
-        if(!currentAuthor.isPresent()){
+    @PutMapping("/habitacions/{idHabitacion}")
+    public ResponseEntity updateHabitacion(@PathVariable Integer idHabitacion, @RequestBody Habitacion habitacion){
+        Optional<Habitacion> currentHabitacion = habitacionService.findById(idHabitacion);
+        if(!currentHabitacion.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
-        habitacion.setIdHabitacion(currentAuthor.get().getIdHabitacion());
+        habitacion.setIdHabitacion(currentHabitacion.get().getIdHabitacion());
         habitacionService.update(habitacion);
         return new ResponseEntity<>(habitacion, HttpStatus.OK);
     }
 
-    @DeleteMapping("/habitacions/{IdHabitacion}")
-    public ResponseEntity deleteHabitacion(@PathVariable Integer IdHabitacion){
-        Optional<Habitacion> currentHabitacion = habitacionService.findById(IdHabitacion);
+    @DeleteMapping("/habitacions/{idHabitacion}")
+    public ResponseEntity deleteHabitacion(@PathVariable Integer idHabitacion){
+        Optional<Habitacion> currentHabitacion = habitacionService.findById(idHabitacion);
         if(!currentHabitacion.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }

@@ -26,9 +26,9 @@ public class UsuarioResource  {
         return new ResponseEntity<>(usuarios, HttpStatus.OK);
     }
 
-    @GetMapping("/usuarios/{IdUsuario}")
-    public ResponseEntity getUsuarioById(@PathVariable Integer IdUsuario){
-        Optional<Usuario> usuario = usuarioService.findById(IdUsuario);
+    @GetMapping("/usuarios/{idUsuario}")
+    public ResponseEntity getUsuarioById(@PathVariable Integer idUsuario){
+        Optional<Usuario> usuario = usuarioService.findById(idUsuario);
         if(!usuario.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
@@ -41,20 +41,20 @@ public class UsuarioResource  {
         return new ResponseEntity<>(usuario, HttpStatus.CREATED);
     }
 
-    @PutMapping("/usuarios/{IdUsuario}")
-    public ResponseEntity updateUsuario(@PathVariable Integer IdUsuario, @RequestBody Usuario usuario){
-        Optional<Usuario> currentAuthor = usuarioService.findById(IdUsuario);
-        if(!currentAuthor.isPresent()){
+    @PutMapping("/usuarios/{idUsuario}")
+    public ResponseEntity updateUsuario(@PathVariable Integer idUsuario, @RequestBody Usuario usuario){
+        Optional<Usuario> currentUsuario = usuarioService.findById(idUsuario);
+        if(!currentUsuario.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
-        usuario.setIdUsuario(currentAuthor.get().getIdUsuario());
+        usuario.setIdUsuario(currentUsuario.get().getIdUsuario());
         usuarioService.update(usuario);
         return new ResponseEntity<>(usuario, HttpStatus.OK);
     }
 
-    @DeleteMapping("/usuarios/{IdUsuario}")
-    public ResponseEntity deleteUsuario(@PathVariable Integer IdUsuario){
-        Optional<Usuario> currentUsuario = usuarioService.findById(IdUsuario);
+    @DeleteMapping("/usuarios/{idUsuario}")
+    public ResponseEntity deleteUsuario(@PathVariable Integer idUsuario){
+        Optional<Usuario> currentUsuario = usuarioService.findById(idUsuario);
         if(!currentUsuario.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }

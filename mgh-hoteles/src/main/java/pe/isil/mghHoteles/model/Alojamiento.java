@@ -20,12 +20,12 @@ import javax.persistence.*;
 public class Alojamiento implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Integer IdAlojamiento;
+    private Integer idAlojamiento;
     private String nombre;
     private Integer valoracion;
     private String tipo;
     private String codAlojamiento;
-    private Integer numero_de_habitaciones;
+    private Integer numeroDeHabitaciones;
     private Integer ubigeo;
 
     @OneToMany(mappedBy = "alojamiento", fetch = FetchType.LAZY, cascade = CascadeType.ALL)

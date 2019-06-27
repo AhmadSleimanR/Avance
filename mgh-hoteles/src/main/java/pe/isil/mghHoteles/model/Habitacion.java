@@ -17,7 +17,7 @@ import java.io.Serializable;
 public class Habitacion implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Integer IdHabitacion;
+    private Integer idHabitacion;
     private String descripcion;
     private Integer tipo;
     private String numero;

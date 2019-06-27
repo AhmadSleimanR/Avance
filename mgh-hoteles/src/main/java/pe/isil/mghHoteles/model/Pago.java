@@ -17,7 +17,7 @@ import java.io.Serializable;
 public class Pago implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Integer IdPago;
+    private Integer idPago;
     private String tipo;
     private Integer total;
 

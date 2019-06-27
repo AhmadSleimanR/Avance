@@ -26,9 +26,9 @@ public class FotoResource {
         return new ResponseEntity<>(fotos, HttpStatus.OK);
     }
 
-    @GetMapping("/fotos/{IdFoto}")
-    public ResponseEntity getFotoById(@PathVariable Integer IdFoto){
-        Optional<Foto> foto = fotoService.findById(IdFoto);
+    @GetMapping("/fotos/{idFoto}")
+    public ResponseEntity getFotoById(@PathVariable Integer idFoto){
+        Optional<Foto> foto = fotoService.findById(idFoto);
         if(!foto.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
@@ -41,20 +41,20 @@ public class FotoResource {
         return new ResponseEntity<>(foto, HttpStatus.CREATED);
     }
 
-    @PutMapping("/fotos/{IdFoto}")
-    public ResponseEntity updateFoto(@PathVariable Integer IdFoto, @RequestBody Foto foto){
-        Optional<Foto> currentAuthor = fotoService.findById(IdFoto);
-        if(!currentAuthor.isPresent()){
+    @PutMapping("/fotos/{idFoto}")
+    public ResponseEntity updateFoto(@PathVariable Integer idFoto, @RequestBody Foto foto){
+        Optional<Foto> currentFoto = fotoService.findById(idFoto);
+        if(!currentFoto.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
-        foto.setIdFoto(currentAuthor.get().getIdFoto());
+        foto.setIdFoto(currentFoto.get().getIdFoto());
         fotoService.update(foto);
         return new ResponseEntity<>(foto, HttpStatus.OK);
     }
 
-    @DeleteMapping("/fotos/{IdFoto}")
-    public ResponseEntity deleteFoto(@PathVariable Integer IdFoto){
-        Optional<Foto> currentFoto = fotoService.findById(IdFoto);
+    @DeleteMapping("/fotos/{idFoto}")
+    public ResponseEntity deleteFoto(@PathVariable Integer idFoto){
+        Optional<Foto> currentFoto = fotoService.findById(idFoto);
         if(!currentFoto.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }

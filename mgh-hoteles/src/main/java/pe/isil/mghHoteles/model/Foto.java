@@ -18,7 +18,7 @@ import javax.persistence.*;
 public class Foto implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Integer IdFoto;
+    private Integer idFoto;
     private String urlFoto;
     private String codEntidad;
 

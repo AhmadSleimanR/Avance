@@ -26,9 +26,9 @@ public class AlojamientoResource {
         return new ResponseEntity<>(alojamientos, HttpStatus.OK);
     }
 
-    @GetMapping("/alojamientos/{IdAlojamiento}")
-    public ResponseEntity getAlojamientoById(@PathVariable Integer IdAlojamiento){
-        Optional<Alojamiento> alojamiento = alojamientoService.findById(IdAlojamiento);
+    @GetMapping("/alojamientos/{idAlojamiento}")
+    public ResponseEntity getAlojamientoById(@PathVariable Integer idAlojamiento){
+        Optional<Alojamiento> alojamiento = alojamientoService.findById(idAlojamiento);
         if(!alojamiento.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
@@ -41,20 +41,20 @@ public class AlojamientoResource {
         return new ResponseEntity<>(alojamiento, HttpStatus.CREATED);
     }
 
-    @PutMapping("/alojamientos/{IdAlojamiento}")
-    public ResponseEntity updateAlojamiento(@PathVariable Integer IdAlojamiento, @RequestBody Alojamiento alojamiento){
-        Optional<Alojamiento> currentAuthor = alojamientoService.findById(IdAlojamiento);
-        if(!currentAuthor.isPresent()){
+    @PutMapping("/alojamientos/{idAlojamiento}")
+    public ResponseEntity updateAlojamiento(@PathVariable Integer idAlojamiento, @RequestBody Alojamiento alojamiento){
+        Optional<Alojamiento> currentAlojamiento = alojamientoService.findById(idAlojamiento);
+        if(!currentAlojamiento.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
-        alojamiento.setIdAlojamiento(currentAuthor.get().getIdAlojamiento());
+        alojamiento.setIdAlojamiento(currentAlojamiento.get().getIdAlojamiento());
         alojamientoService.update(alojamiento);
         return new ResponseEntity<>(alojamiento, HttpStatus.OK);
     }
 
-    @DeleteMapping("/alojamientos/{IdAlojamiento}")
-    public ResponseEntity deleteAlojamiento(@PathVariable Integer IdAlojamiento){
-        Optional<Alojamiento> currentAlojamiento = alojamientoService.findById(IdAlojamiento);
+    @DeleteMapping("/alojamientos/{idAlojamiento}")
+    public ResponseEntity deleteAlojamiento(@PathVariable Integer idAlojamiento){
+        Optional<Alojamiento> currentAlojamiento = alojamientoService.findById(idAlojamiento);
         if(!currentAlojamiento.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }

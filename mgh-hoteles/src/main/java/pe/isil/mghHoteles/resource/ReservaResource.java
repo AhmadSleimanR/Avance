@@ -26,9 +26,9 @@ public class ReservaResource {
         return new ResponseEntity<>(reservas, HttpStatus.OK);
     }
 
-    @GetMapping("/reservas/{IdReserva}")
-    public ResponseEntity getReservaById(@PathVariable Integer IdReserva){
-        Optional<Reserva> reserva = reservaService.findById(IdReserva);
+    @GetMapping("/reservas/{idReserva}")
+    public ResponseEntity getReservaById(@PathVariable Integer idReserva){
+        Optional<Reserva> reserva = reservaService.findById(idReserva);
         if(!reserva.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
@@ -41,20 +41,20 @@ public class ReservaResource {
         return new ResponseEntity<>(reserva, HttpStatus.CREATED);
     }
 
-    @PutMapping("/reservas/{IdReserva}")
-    public ResponseEntity updateReserva(@PathVariable Integer IdReserva, @RequestBody Reserva reserva){
-        Optional<Reserva> currentAuthor = reservaService.findById(IdReserva);
-        if(!currentAuthor.isPresent()){
+    @PutMapping("/reservas/{idReserva}")
+    public ResponseEntity updateReserva(@PathVariable Integer idReserva, @RequestBody Reserva reserva){
+        Optional<Reserva> currentReserva = reservaService.findById(idReserva);
+        if(!currentReserva.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
-        reserva.setIdReserva(currentAuthor.get().getIdReserva());
+        reserva.setIdReserva(currentReserva.get().getIdReserva());
         reservaService.update(reserva);
         return new ResponseEntity<>(reserva, HttpStatus.OK);
     }
 
-    @DeleteMapping("/reservas/{IdReserva}")
-    public ResponseEntity deleteReserva(@PathVariable Integer IdReserva){
-        Optional<Reserva> currentReserva = reservaService.findById(IdReserva);
+    @DeleteMapping("/reservas/{idReserva}")
+    public ResponseEntity deleteReserva(@PathVariable Integer idReserva){
+        Optional<Reserva> currentReserva = reservaService.findById(idReserva);
         if(!currentReserva.isPresent()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
