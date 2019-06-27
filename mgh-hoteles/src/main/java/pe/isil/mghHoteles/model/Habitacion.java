@@ -15,7 +15,8 @@ import java.io.Serializable;
 @Data
 @JsonIgnoreProperties({"alojamiento", "reserva", "handler"})
 public class Habitacion implements Serializable {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "habitacion_generator")
+    @SequenceGenerator(name = "habitacion_generator", sequenceName = "habitacion_seq")
     @Id
     private Integer idHabitacion;
     private String descripcion;
@@ -28,7 +29,7 @@ public class Habitacion implements Serializable {
     @JoinColumn(name = "IdAlojamiento")
     private Alojamiento alojamiento;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "IdReserva")
     private Reserva reserva;
 }

@@ -18,7 +18,8 @@ import javax.persistence.*;
 @Data
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Alojamiento implements Serializable {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "alojamiento_generator")
+    @SequenceGenerator(name = "alojamiento_generator", sequenceName = "alojamiento_seq")
     @Id
     private Integer idAlojamiento;
     private String nombre;
@@ -28,7 +29,7 @@ public class Alojamiento implements Serializable {
     private Integer numeroDeHabitaciones;
     private Integer ubigeo;
 
-    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Habitacion> habitaciones = new ArrayList<>();
     @OneToMany(mappedBy = "alojamiento", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Foto> fotos = new ArrayList<>();

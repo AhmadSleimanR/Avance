@@ -16,16 +16,17 @@ import javax.persistence.*;
 @Data
 @JsonIgnoreProperties({"alojamiento", "usuario", "handler"})
 public class Foto implements Serializable {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "foto_generator")
+    @SequenceGenerator(name = "foto_generator", sequenceName = "foto_seq")
     @Id
     private Integer idFoto;
     private String urlFoto;
     private String codEntidad;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "IdAlojamiento")
     private Alojamiento alojamiento;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "IdUsuario")
     private Usuario usuario;
 }

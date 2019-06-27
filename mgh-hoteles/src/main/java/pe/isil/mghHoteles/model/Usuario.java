@@ -12,7 +12,8 @@ import java.io.Serializable;
 @Data
 @JsonIgnoreProperties({"reserva", "handler"})
 public class Usuario implements Serializable {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usuario_generator")
+    @SequenceGenerator(name = "usuario_generator", sequenceName = "usuario_seq")
     @Id
     private Integer idUsuario;
     private String nombres;

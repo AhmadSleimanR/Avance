@@ -17,7 +17,8 @@ import java.util.List;
 @Data
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Reserva implements Serializable {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "reserva_generator")
+    @SequenceGenerator(name = "reserva_generator", sequenceName = "reserva_seq")
     @Id
     private  Integer idReserva;
     private  String comentarios;
