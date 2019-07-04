@@ -24,6 +24,11 @@ public class Usuario implements Serializable {
     private String foto;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdReserva")
+    @JoinColumn(name = "idReserva", referencedColumnName = "idReserva")
     private Reserva reserva;
+
+    @Override
+    public String toString(){
+        return "Id: "+idUsuario;
+    }
 }

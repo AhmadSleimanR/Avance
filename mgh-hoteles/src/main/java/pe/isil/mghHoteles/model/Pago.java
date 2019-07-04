@@ -23,6 +23,11 @@ public class Pago implements Serializable {
     private Integer total;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "IdReserva")
+    @JoinColumn(name = "idReserva", referencedColumnName = "idReserva")
     private Reserva reserva;
+
+    @Override
+    public String toString(){
+        return "Id: "+idPago;
+    }
 }

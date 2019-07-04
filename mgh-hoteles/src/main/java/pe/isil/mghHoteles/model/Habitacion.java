@@ -26,10 +26,15 @@ public class Habitacion implements Serializable {
     private String precio;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "IdAlojamiento")
+    @JoinColumn(name = "idAlojamiento", referencedColumnName = "idAlojamiento")
     private Alojamiento alojamiento;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdReserva")
+    @JoinColumn(name = "idReserva", referencedColumnName = "idReserva")
     private Reserva reserva;
+
+    @Override
+    public String toString(){
+        return "Id: "+idHabitacion;
+    }
 }

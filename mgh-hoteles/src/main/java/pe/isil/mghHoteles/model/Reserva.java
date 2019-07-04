@@ -26,10 +26,15 @@ public class Reserva implements Serializable {
     private  LocalDate fechaSalida;
     private  Integer cantidadDePersonas;
 
-    @OneToOne(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "reserva", fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     private Usuario usuario;
-    @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     private List<Pago> pagos = new ArrayList<>();
-    @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "reserva", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     private List<Habitacion> habitaciones = new ArrayList<>();
+
+    @Override
+    public String toString(){
+        return "Id: "+idReserva;
+    }
 }

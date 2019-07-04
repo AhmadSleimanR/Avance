@@ -24,9 +24,14 @@ public class Foto implements Serializable {
     private String codEntidad;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdAlojamiento")
+    @JoinColumn(name = "idAlojamiento", referencedColumnName = "idAlojamiento")
     private Alojamiento alojamiento;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdUsuario")
+    @JoinColumn(name = "idUsuario", referencedColumnName = "idUsuario")
     private Usuario usuario;
+
+    @Override
+    public String toString(){
+        return "Id: "+idFoto;
+    }
 }

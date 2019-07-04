@@ -29,8 +29,13 @@ public class Alojamiento implements Serializable {
     private Integer numeroDeHabitaciones;
     private Integer ubigeo;
 
-    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     private List<Habitacion> habitaciones = new ArrayList<>();
-    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     private List<Foto> fotos = new ArrayList<>();
+
+    @Override
+    public String toString(){
+        return "Id: "+idAlojamiento;
+    }
 }
