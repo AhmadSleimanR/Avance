@@ -29,10 +29,29 @@ public class Alojamiento implements Serializable {
     private Integer numeroDeHabitaciones;
     private Integer ubigeo;
 
-    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Habitacion> habitaciones = new ArrayList<>();
-    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
+    @OneToMany(mappedBy = "alojamiento", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Foto> fotos = new ArrayList<>();
+
+    public void addHabitacion(Habitacion hab){
+        hab.setAlojamiento(this);
+        this.habitaciones.add(hab);
+    }
+
+    public void removeHabitacion(Habitacion hab){
+        hab.setAlojamiento(null);
+        this.habitaciones.remove(hab);
+    }
+    public void addFoto(Foto foto){
+        foto.setAlojamiento(this);
+        this.fotos.add(foto);
+    }
+
+    public void removeFoto(Foto foto){
+        foto.setAlojamiento(null);
+        this.fotos.remove(foto);
+    }
 
     @Override
     public String toString(){
