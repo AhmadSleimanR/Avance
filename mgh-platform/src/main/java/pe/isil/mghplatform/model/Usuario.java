@@ -11,10 +11,11 @@ import java.io.Serializable;
 @Data
 public class Usuario implements Serializable {
 
-    private Integer IdUsuario;
-    private String nombre;
-    private String apellido;
-    private String contraseña;
+    private Integer idUsuario;
+    private String nombres;
+    private String apellidos;
+    private String contrasena;
+    private String codUsuario;
     private String email;
     private String foto;
 

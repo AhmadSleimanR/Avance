@@ -11,7 +11,8 @@ import java.io.Serializable;
 @Data
 public class Pago implements Serializable {
 
-    private Integer IdPago;
+    private Integer idPago;
     private String tipo;
     private Integer total;
+
 }

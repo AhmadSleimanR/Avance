@@ -14,14 +14,11 @@ import java.util.List;
 @Data
 public class Habitacion implements Serializable {
 
-    private Integer IdHabitacion;
+    private Integer idHabitacion;
     private String descripcion;
-    private String tipo;
+    private Integer tipo;
     private String numero;
+    private String codHabitacion;
     private String precio;
-    private List<Alojamiento> alojamientos;
 
-    public void addAlojamiento(Alojamiento ... alojamientosArgs){
-        alojamientos = Arrays.asList(alojamientosArgs);
-    }
 }

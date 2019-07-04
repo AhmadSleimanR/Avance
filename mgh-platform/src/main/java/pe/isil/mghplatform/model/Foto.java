@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Data
 public class Foto implements Serializable {
 
-    private Integer IdFoto;
+    private Integer idFoto;
     private String urlFoto;
     private String codEntidad;
 
