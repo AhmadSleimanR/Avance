@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Listado de Reservas</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Listado de reservas</h3>
+    <div class="col-md-12" >
+        <a th:href="@{/reserva/add}" class="btn btn-primary">Agregar Reserva</a>
+    </div>
+    <div th:switch="reservas">
+        <div th:case="*">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Comentarios</th>
+                    <th scope="col">Fecha de Ingreso</th>
+                    <th scope="col">Fecha de Salida</th>
+                    <th scope="col">Cantidad de Personas</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="res : ${reserva}">
+                    <th scope="row" th:text="${res.idReserva}"></th>
+                    <td th:text="${res.comentarios}"></td>
+                    <td th:text="${res.fechaIngreso.dayOfMonth}+'/'+${res.fechaIngreso.monthValue}+'/'+${res.fechaIngreso.year}"></td>
+                    <td th:text="${res.fechaSalida.dayOfMonth}+'/'+${res.fechaSalida.monthValue}+'/'+${res.fechaSalida.year}"></td>
+                    <td th:text="${res.cantidadDePersonas}"></td>
+
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <a th:href="@{/reserva/edit/{id} (id=${res.idReserva}) }"
+                               class="btn btn-primary btn-sm">Editar</a>
+                            <a th:href="@{/reserva/delete/{id} (id=${res.idReserva}) }"
+                               class="btn btn-danger btn-sm">Eliminar</a>
+                        </div>
+                    </td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

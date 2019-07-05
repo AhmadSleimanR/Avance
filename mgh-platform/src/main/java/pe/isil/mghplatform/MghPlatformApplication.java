@@ -12,6 +12,7 @@ import pe.isil.mghplatform.model.*;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
+
 @SpringBootApplication
 public class MghPlatformApplication implements CommandLineRunner {
 
@@ -53,6 +54,7 @@ public class MghPlatformApplication implements CommandLineRunner {
         alojamiento.setNombre("Hotel las Flores");
         alojamiento.setNumeroDeHabitaciones(30);
         alojamiento.setTipo("Hotel Turistico");
+        alojamiento.setCodAlojamiento("ALO02");
         alojamiento.setValoracion(5);
         alojamiento.setUbigeo(13);
         alojamiento.setHabitaciones(Arrays.asList(habitacion));

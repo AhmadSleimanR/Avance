@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Editar usuarios</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Editar usuario</h3>
+    <div>
+
+        <form action="#" method="post"
+              th:object="${usuario}"
+              th:action="@{/usuario/update/{id} (id=${usuario.idUsuario})}"
+        >
+
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres"
+                       class="form-controller"
+                       th:value="${usuario.nombres}"
+                       placeholder="ingrese Nombres"
+                       th:field="*{nombres}">
+            </div>
+
+
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos"
+                       class="form-controller"
+                       th:value="${usuario.apellidos}"
+                       placeholder="ingrese Apellidos"
+                       th:field="*{apellidos}">
+            </div>
+
+            <div class="form-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="text" id="contrasena"
+                       class="form-controller"
+                       th:value="${usuario.contrasena}"
+                       placeholder="ingrese Contraseña"
+                       th:field="*{contrasena}">
+            </div>
+            <div class="form-group">
+                <label for="codUsuario">Codigo de Usuario</label>
+                <input type="text" id="codUsuario"
+                       class="form-controller"
+                       th:value="${usuario.codUsuario}"
+                       placeholder="ingrese Codigo de Usuario"
+                       th:field="*{codUsuario}">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email"
+                       class="form-controller"
+                       th:value="${usuario.email}"
+                       placeholder="ingrese Email"
+                       th:field="*{email}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Editar usuario
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+</html>

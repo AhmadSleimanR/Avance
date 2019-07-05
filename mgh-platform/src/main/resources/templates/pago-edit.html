@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Editar pagos</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Editar pago</h3>
+    <div>
+
+        <form action="#" method="post"
+              th:object="${pago}"
+              th:action="@{/pago/update/{id} (id=${pago.idPago})}"
+        >
+
+            <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <input type="text" id="tipo"
+                       class="form-controller"
+                       th:value="${pago.tipo}"
+                       placeholder="ingrese Tipo"
+                       th:field="*{tipo}">
+            </div>
+
+
+            <div class="form-group">
+                <label for="total">Total</label>
+                <input type="number" id="total"
+                       class="form-controller"
+                       th:value="${pago.total}"
+                       placeholder="ingrese Total"
+                       th:field="*{total}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Editar pago
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+</html>

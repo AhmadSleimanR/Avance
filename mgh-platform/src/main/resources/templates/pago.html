@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Listado de Pagos</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Listado de pagos</h3>
+    <div class="col-md-12" >
+        <a th:href="@{/pago/add}" class="btn btn-primary">Agregar Pago</a>
+    </div>
+    <div th:switch="pagos">
+        <div th:case="*">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Total</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="pag : ${pago}">
+                    <th scope="row" th:text="${pag.idPago}"></th>
+                    <td th:text="${pag.tipo}"></td>
+                    <td th:text="${pag.total}"></td>
+
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <a th:href="@{/pago/edit/{id} (id=${pag.idPago}) }"
+                               class="btn btn-primary btn-sm">Editar</a>
+                            <a th:href="@{/pago/delete/{id} (id=${pag.idPago}) }"
+                               class="btn btn-danger btn-sm">Eliminar</a>
+                        </div>
+                    </td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

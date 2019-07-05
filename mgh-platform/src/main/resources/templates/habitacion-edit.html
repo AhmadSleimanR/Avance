@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Editar habitacions</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Editar habitacion</h3>
+    <div>
+
+        <form action="#" method="post"
+              th:object="${habitacion}"
+              th:action="@{/habitacion/update/{id} (id=${habitacion.idHabitacion})}"
+        >
+
+            <div class="form-group">
+                <label for="descripcion">Descripcion</label>
+                <input type="text" id="descripcion"
+                       class="form-controller"
+                       th:value="${habitacion.descripcion}"
+                       placeholder="ingrese descripcion"
+                       th:field="*{descripcion}">
+            </div>
+
+            <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <input type="text" id="tipo"
+                       class="form-controller"
+                       th:value="${habitacion.tipo}"
+                       placeholder="ingrese tipo"
+                       th:field="*{tipo}">
+            </div>
+
+            <div class="form-group">
+                <label for="numero">Numero</label>
+                <input type="number" id="numero"
+                       class="form-controller"
+                       th:value="${habitacion.numero}"
+                       placeholder="ingrese numero"
+                       th:field="*{numero}">
+            </div>
+            <div class="form-group">
+                <label for="codHabitacion">Codigo de Habitacion</label>
+                <input type="text" id="codHabitacion"
+                       class="form-controller"
+                       th:value="${habitacion.codHabitacion}"
+                       placeholder="ingrese Codigo de Habitacion"
+                       th:field="*{codHabitacion}">
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio</label>
+                <input type="text" id="precio"
+                       class="form-controller"
+                       th:value="${habitacion.precio}"
+                       placeholder="ingrese precio"
+                       th:field="*{precio}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Editar habitacion
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+</html>

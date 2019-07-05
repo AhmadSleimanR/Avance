@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Listado de Usuarios</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Listado de usuarios</h3>
+    <div class="col-md-12" >
+        <a th:href="@{/usuario/add}" class="btn btn-primary">Agregar Usuario</a>
+    </div>
+    <div th:switch="usuarios">
+        <div th:case="*">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Codigo de Usuario</th>
+                    <th scope="col">Email</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="usu : ${usuario}">
+                    <th scope="row" th:text="${usu.idUsuario}"></th>
+                    <td th:text="${usu.nombres}"></td>
+                    <td th:text="${usu.apellidos}"></td>
+                    <td th:text="${usu.contrasena}"></td>
+                    <td th:text="${usu.codUsuario}"></td>
+                    <td th:text="${usu.email}"></td>
+
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <a th:href="@{/usuario/edit/{id} (id=${usu.idUsuario}) }"
+                               class="btn btn-primary btn-sm">Editar</a>
+                            <a th:href="@{/usuario/delete/{id} (id=${usu.idUsuario}) }"
+                               class="btn btn-danger btn-sm">Eliminar</a>
+                        </div>
+                    </td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

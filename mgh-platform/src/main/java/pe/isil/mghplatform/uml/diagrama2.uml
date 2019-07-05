@@ -3,17 +3,23 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
+    <node x="676.0" y="1035.0">pe.isil.mghplatform.controller.FotoController</node>
+    <node x="366.0" y="764.0">pe.isil.mghplatform.controller.HabitacionController</node>
+    <node x="718.0" y="764.0">pe.isil.mghplatform.controller.PagoController</node>
+    <node x="1056.0" y="764.0">pe.isil.mghplatform.controller.ReservaController</node>
+    <node x="0.0" y="764.0">pe.isil.mghplatform.controller.AlojamientoController</node>
+    <node x="0.0" y="1035.0">pe.isil.mghplatform.controller.UsuarioController</node>
     <node x="0.0" y="404.0">pe.isil.mghplatform.model.Usuario</node>
+    <node x="338.0" y="1035.0">pe.isil.mghplatform.MghPlatformApplication</node>
     <node x="0.0" y="0.0">pe.isil.mghplatform.model.Alojamiento</node>
-    <node x="236.0" y="764.0">pe.isil.mghplatform.MghPlatformApplication</node>
-    <node x="603.0" y="0.0">pe.isil.mghplatform.model.Reserva</node>
-    <node x="402.0" y="404.0">pe.isil.mghplatform.model.Habitacion</node>
-    <node x="791.0" y="404.0">pe.isil.mghplatform.model.Pago</node>
-    <node x="0.0" y="764.0">pe.isil.mghplatform.model.Foto</node>
+    <node x="591.0" y="0.0">pe.isil.mghplatform.model.Reserva</node>
+    <node x="381.0" y="404.0">pe.isil.mghplatform.model.Habitacion</node>
+    <node x="758.0" y="404.0">pe.isil.mghplatform.model.Pago</node>
+    <node x="993.0" y="404.0">pe.isil.mghplatform.model.Foto</node>
   </nodes>
   <notes />
   <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="726.0" y="287.5" />
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="918.940476190476" y="459.1666666666666" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>

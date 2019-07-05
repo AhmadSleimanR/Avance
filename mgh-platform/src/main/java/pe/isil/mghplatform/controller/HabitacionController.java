@@ -3,6 +3,7 @@ package pe.isil.mghplatform.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+@Controller
 public class HabitacionController {
 	@Autowired
 	RestTemplate restTemplate;
@@ -22,11 +24,6 @@ public class HabitacionController {
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 		return builder.build();
-	}
-
-	@GetMapping( {"/", "/index"})
-	public String index(){
-		return "index";
 	}
 
 	@GetMapping("/habitacion")

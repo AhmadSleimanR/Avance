@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Agregar Reservas</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Agregar reserva</h3>
+    <div>
+
+        <form action="#" method="post"
+              th:object="${reserva}"
+              th:action="@{/reserva/save}"
+        >
+            <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <input type="text" id="comentarios"
+                       class="form-controller"
+                       placeholder="ingrese comentarios"
+                       th:field="*{comentarios}">
+            </div>
+
+
+            <div class="form-group">
+                <label for="fechaIngreso">Fecha De Ingreso</label>
+                <input type="date" id="fechaIngreso"
+                       class="form-controller"
+                       placeholder="ingrese Fecha De Ingreso"
+                       th:field="*{fechaIngreso}">
+            </div>
+
+            <div class="form-group">
+                <label for="fechaSalida">Fecha De Salida</label>
+                <input type="date" id="fechaSalida"
+                       class="form-controller"
+                       placeholder="ingrese Fecha De Salida"
+                       th:field="*{fechaSalida}">
+            </div>
+
+            <div class="form-group">
+                <label for="cantidadDePersonas">Cantidad De Personas</label>
+                <input type="number" id="cantidadDePersonas"
+                       class="form-controller"
+                       placeholder="ingrese Cantidad De Personas"
+                       th:field="*{cantidadDePersonas}">
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Agregar reserva
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+</html>

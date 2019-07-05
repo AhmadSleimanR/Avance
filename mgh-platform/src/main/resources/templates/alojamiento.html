@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Listado de Alojamientos</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Listado de alojamientos</h3>
+    <div class="col-md-12" >
+        <a th:href="@{/alojamiento/add}" class="btn btn-primary">Agregar Alojamiento</a>
+    </div>
+    <div th:switch="alojamientos">
+        <div th:case="*">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Valoracion</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Codigo de Alojamiento</th>
+                    <th scope="col">Numero de Habitaciones</th>
+                    <th scope="col">Ubigeo</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="alj : ${alojamiento}">
+                    <th scope="row" th:text="${alj.idAlojamiento}"></th>
+                    <td th:text="${alj.nombre}"></td>
+                    <td th:text="${alj.valoracion}"></td>
+                    <td th:text="${alj.tipo}"></td>
+                    <td th:text="${alj.codAlojamiento}"></td>
+                    <td th:text="${alj.numeroDeHabitaciones}"></td>
+                    <td th:text="${alj.ubigeo}"></td>
+
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <a th:href="@{/alojamiento/edit/{id} (id=${alj.idAlojamiento}) }"
+                               class="btn btn-primary btn-sm">Editar</a>
+                            <a th:href="@{/alojamiento/delete/{id} (id=${alj.idAlojamiento}) }"
+                               class="btn btn-danger btn-sm">Eliminar</a>
+                        </div>
+                    </td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

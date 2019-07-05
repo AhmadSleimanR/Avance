@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Listado de Habitaciones</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Listado de habitaciones</h3>
+    <div class="col-md-12" >
+        <a th:href="@{/habitacion/add}" class="btn btn-primary">Agregar Habitacion</a>
+    </div>
+
+    <div th:switch="habitaciones">
+        <div th:case="*">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Numero</th>
+                    <th scope="col">Codigo Habitacion</th>
+                    <th scope="col">Precio</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="hab : ${habitacion}">
+                    <th scope="row" th:text="${hab.idHabitacion}"></th>
+                    <td th:text="${hab.descripcion}"></td>
+                    <td th:text="${hab.tipo}"></td>
+                    <td th:text="${hab.numero}"></td>
+                    <td th:text="${hab.codHabitacion}"></td>
+                    <td th:text="${hab.precio}"></td>
+
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <a th:href="@{/habitacion/edit/{id} (id=${hab.idHabitacion}) }"
+                               class="btn btn-primary btn-sm">Editar</a>
+                            <a th:href="@{/habitacion/delete/{id} (id=${hab.idHabitacion}) }"
+                               class="btn btn-danger btn-sm">Eliminar</a>
+                        </div>
+                    </td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
