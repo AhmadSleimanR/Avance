@@ -17,7 +17,7 @@ public class HabitacionResource {
     @Autowired
     HabitacionService habitacionService;
 
-    @GetMapping("/habitacions")
+    @GetMapping("/habitaciones")
     public ResponseEntity getAll(){
         List<Habitacion> habitacions = habitacionService.findAll();
         if(habitacions.isEmpty()){
@@ -26,7 +26,7 @@ public class HabitacionResource {
         return new ResponseEntity<>(habitacions, HttpStatus.OK);
     }
 
-    @GetMapping("/habitacions/{idHabitacion}")
+    @GetMapping("/habitaciones/{idHabitacion}")
     public ResponseEntity getHabitacionById(@PathVariable Integer idHabitacion){
         Optional<Habitacion> habitacion = habitacionService.findById(idHabitacion);
         if(!habitacion.isPresent()){
@@ -35,13 +35,13 @@ public class HabitacionResource {
         return new ResponseEntity<>(habitacion, HttpStatus.OK);
     }
 
-    @PostMapping("/habitacions")
+    @PostMapping("/habitaciones")
     public ResponseEntity createHabitacion(@RequestBody Habitacion habitacion){
         habitacionService.create(habitacion);
         return new ResponseEntity<>(habitacion, HttpStatus.CREATED);
     }
 
-    @PutMapping("/habitacions/{idHabitacion}")
+    @PutMapping("/habitaciones/{idHabitacion}")
     public ResponseEntity updateHabitacion(@PathVariable Integer idHabitacion, @RequestBody Habitacion habitacion){
         Optional<Habitacion> currentHabitacion = habitacionService.findById(idHabitacion);
         if(!currentHabitacion.isPresent()){
@@ -52,7 +52,7 @@ public class HabitacionResource {
         return new ResponseEntity<>(habitacion, HttpStatus.OK);
     }
 
-    @DeleteMapping("/habitacions/{idHabitacion}")
+    @DeleteMapping("/habitaciones/{idHabitacion}")
     public ResponseEntity deleteHabitacion(@PathVariable Integer idHabitacion){
         Optional<Habitacion> currentHabitacion = habitacionService.findById(idHabitacion);
         if(!currentHabitacion.isPresent()){

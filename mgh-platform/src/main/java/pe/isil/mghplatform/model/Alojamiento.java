@@ -6,13 +6,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
+@AllArgsConstructor
 public class Alojamiento implements Serializable {
-
     private Integer idAlojamiento;
     private String nombre;
     private Integer valoracion;
@@ -21,6 +21,12 @@ public class Alojamiento implements Serializable {
     private Integer numeroDeHabitaciones;
     private Integer ubigeo;
 
-    private List<Foto> fotos;
-    private List<Habitacion> habitaciones;
+
+    private List<Habitacion> habitaciones = new ArrayList<>();
+    private List<Foto> fotos = new ArrayList<>();
+
+    @Override
+    public String toString(){
+        return "Id: "+idAlojamiento;
+    }
 }

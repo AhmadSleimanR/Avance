@@ -26,7 +26,7 @@ public class Foto implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "idAlojamiento", referencedColumnName = "idAlojamiento")
     private Alojamiento alojamiento;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "idUsuario", referencedColumnName = "idUsuario")
     private Usuario usuario;
 

@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pe.isil.mghHoteles.model.Foto;
+import pe.isil.mghHoteles.model.Habitacion;
+import pe.isil.mghHoteles.model.Pago;
 import pe.isil.mghHoteles.model.Usuario;
 import pe.isil.mghHoteles.service.UsuarioService;
 
@@ -37,6 +40,10 @@ public class UsuarioResource  {
 
     @PostMapping("/usuarios")
     public ResponseEntity createUsuario(@RequestBody Usuario usuario){
+        if(usuario.getFoto() != null){
+            Foto foto = usuario.getFoto();
+            foto.setUsuario(usuario);
+        }
         usuarioService.create(usuario);
         return new ResponseEntity<>(usuario, HttpStatus.CREATED);
     }
@@ -48,6 +55,10 @@ public class UsuarioResource  {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
         usuario.setIdUsuario(currentUsuario.get().getIdUsuario());
+        if(usuario.getFoto() != null){
+            Foto foto = usuario.getFoto();
+            foto.setUsuario(usuario);
+        }
         usuarioService.update(usuario);
         return new ResponseEntity<>(usuario, HttpStatus.OK);
     }

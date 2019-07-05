@@ -21,8 +21,9 @@ public class Usuario implements Serializable {
     private String contrasena;
     private String codUsuario;
     private String email;
-    private String foto;
 
+    @OneToOne(mappedBy = "usuario", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private Foto foto;
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "idReserva", referencedColumnName = "idReserva")
     private Reserva reserva;

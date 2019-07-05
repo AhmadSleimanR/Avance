@@ -73,7 +73,6 @@ public class MghHotelesApplication implements CommandLineRunner {
         usuario.setApellidos("Tornero");
         usuario.setContrasena("1234");
         usuario.setEmail("jeremy@gmail.com");
-        usuario.setFoto("");
         usuario.setCodUsuario("USU01");
         usuario.setReserva(reserva);
         usuarioRepository.save(usuario);

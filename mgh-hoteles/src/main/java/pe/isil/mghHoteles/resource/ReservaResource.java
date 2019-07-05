@@ -1,15 +1,23 @@
 package pe.isil.mghHoteles.resource;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pe.isil.mghHoteles.model.Habitacion;
+import pe.isil.mghHoteles.model.Pago;
 import pe.isil.mghHoteles.model.Reserva;
+import pe.isil.mghHoteles.model.Usuario;
+import pe.isil.mghHoteles.service.HabitacionService;
+import pe.isil.mghHoteles.service.PagoService;
 import pe.isil.mghHoteles.service.ReservaService;
+import pe.isil.mghHoteles.service.UsuarioService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Slf4j
 @RestController
 @RequestMapping("/api")
 public class ReservaResource {
@@ -37,6 +45,14 @@ public class ReservaResource {
 
     @PostMapping("/reservas")
     public ResponseEntity createReserva(@RequestBody Reserva reserva){
+        for (Habitacion habitacion : reserva.getHabitaciones()){
+            habitacion.setReserva(reserva);
+        }
+        for (Pago pago : reserva.getPagos()){
+            pago.setReserva(reserva);
+        }
+        Usuario usuario = reserva.getUsuario();
+        usuario.setReserva(reserva);
         reservaService.create(reserva);
         return new ResponseEntity<>(reserva, HttpStatus.CREATED);
     }
@@ -48,6 +64,14 @@ public class ReservaResource {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
         reserva.setIdReserva(currentReserva.get().getIdReserva());
+        for (Habitacion habitacion : reserva.getHabitaciones()){
+            habitacion.setReserva(reserva);
+        }
+        for (Pago pago : reserva.getPagos()){
+            pago.setReserva(reserva);
+        }
+        Usuario usuario = reserva.getUsuario();
+        usuario.setReserva(reserva);
         reservaService.update(reserva);
         return new ResponseEntity<>(reserva, HttpStatus.OK);
     }

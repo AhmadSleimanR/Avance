@@ -3,17 +3,17 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="406.0" y="448.0">pe.isil.mghplatform.model.Usuario</node>
-    <node x="236.0" y="786.0">pe.isil.mghplatform.MghPlatformApplication</node>
-    <node x="0.0" y="448.0">pe.isil.mghplatform.model.Alojamiento</node>
-    <node x="0.0" y="0.0">pe.isil.mghplatform.model.Reserva</node>
-    <node x="624.0" y="0.0">pe.isil.mghplatform.model.Habitacion</node>
-    <node x="771.0" y="448.0">pe.isil.mghplatform.model.Pago</node>
-    <node x="0.0" y="786.0">pe.isil.mghplatform.model.Foto</node>
+    <node x="0.0" y="404.0">pe.isil.mghplatform.model.Usuario</node>
+    <node x="0.0" y="0.0">pe.isil.mghplatform.model.Alojamiento</node>
+    <node x="236.0" y="764.0">pe.isil.mghplatform.MghPlatformApplication</node>
+    <node x="603.0" y="0.0">pe.isil.mghplatform.model.Reserva</node>
+    <node x="402.0" y="404.0">pe.isil.mghplatform.model.Habitacion</node>
+    <node x="791.0" y="404.0">pe.isil.mghplatform.model.Pago</node>
+    <node x="0.0" y="764.0">pe.isil.mghplatform.model.Foto</node>
   </nodes>
   <notes />
   <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="734.0" y="287.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="726.0" y="287.5" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
